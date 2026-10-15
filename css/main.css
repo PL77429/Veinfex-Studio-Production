@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color: #ffffff;
     font-size: 16px;
+    background:#000
 }
 
 a {
@@ -21,9 +22,25 @@ img {
     max-width: 100%;
 }
 
-.wrapper {
+.index .wrapper {
     background: #030314;
 background: linear-gradient(180deg, rgba(3, 3, 20, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(92, 74, 140, 1) 100%);
+max-width: 100%;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+.about .wrapper {
+    background: #008aa6;
+background: linear-gradient(180deg, rgba(0, 138, 166, 1) 0%, rgba(8, 8, 94, 1) 49%, rgba(2, 0, 36, 1) 100%);
+max-width: 100%;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+.contacts .wrapper {
+    background: #0e00a6;
+background: linear-gradient(180deg, rgba(14, 0, 166, 1) 0%, rgba(0, 0, 64, 1) 49%, rgba(12, 6, 83, 1) 88%, rgba(2, 2, 20, 1) 100%);
 max-width: 100%;
 min-height: 100vh;
 overflow-x: hidden;
@@ -434,6 +451,98 @@ margin-right: auto;
     background: red;
 }
 
+.hero-contacts h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 70%;
+    margin: 80px 15%;
+}
+
+.feedback {
+    padding: 70px 0 20px 0;
+    background: transparent;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    width: 600px;
+    margin: 80px auto 0 auto;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline>div {
+    width: 48%;
+}
+
+.feedback form label {
+    color: #c28d8d;
+    font-size: 14px;
+}
+
+.feedback form input, .feedback form textarea {
+    background: #dfb3b3;
+    border-radius: 10px;
+    border: 0.6px solid #ccc;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #000;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 96%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right:auto;
+    background: orange;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover {
+    transform: scale(1.1);
+    background: rgb(54, 39, 10);
+}
+
 footer {
     background:rgba(92, 74, 140, 1);
     padding:50px 0;
@@ -469,4 +578,12 @@ footer hr {
 
 footer > p {
     text-align: center;
+}
+
+footer.about {
+    background: transparent;
+}
+
+footer.contacts {
+    background: transparent;
 }

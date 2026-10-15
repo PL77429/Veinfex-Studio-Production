@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veinfex_Studio</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="contacts">
+    <div class = "wrapper">
+        <header class = "container">
+            <span class = "logo">Veinfex_Studio</span>
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="active"><a href="contacts.html">Contact us</a></li>
+                <li class="btn"><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <div class="container hero-contacts">
+            <h1>Contact us</h1>
+            <p>Feel free to reach out to us with any questions or inquiries</p>
+            <img src ="img/contacts.png" alt="">
+        </div>
+
+        <div class="feedback">
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>We value your feedback and would love to hear from you. Please fill out the form below to share your thoughts, suggestions, or any issues you may have encountered.</p>
+                
+                <form>
+                    <div class ="inline">
+                        <div>
+                            <label>Name</label>
+                            <input type="Your Name">
+                        </div>
+                        <div>
+                            <label>Surname</label>
+                            <input type="Your Surname">
+                        </div>
+                    </div>
+
+                    <label>Email</label>
+                    <input type="email" class="one-line">
+
+                    <label>Message</label>
+                    <textarea class="one-line"></textarea>
+
+                    <button type="button">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="contacts">
+            <hr>
+            <div class = "blocks container">
+                <div>
+                    <span class = "logo">Veinfex Studio</span>
+                    <p>Сайт на котором собраны все мои фильмы которые я делал на празд
+                </div>
+
+                <div>
+                    <h4>About us</h4>
+                    <ul>
+                        <li>Movies</li>
+                        <li>Photos</li>
+                        <li>Library</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact us</h4>
+                    <p>+48 888 888 888</p>
+                </div>
+            </div>
+
+            <hr>
+            <p>Все права защищены ©2026 Veinfex_Studio®</p>
+        </footer>
+    </div>
+
+    <script>
+        function checkEmail () {
+            let email = document.querySelector('#emailField') .value;
+            if (!email.includes ('@')) alert ('Нет символа @');
+            else if (!email.includes ('.')) alert ('Нет символа .');
+            else alert ('Почта была сохранена');
+        }
+    </script>
+
+</body>
+
+</html>
