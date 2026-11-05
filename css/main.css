@@ -416,6 +416,12 @@ margin-right: auto;
     margin-bottom:40px;
 }
 
+.work h3 {
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .work .blocks {
     display:flex;
     justify-content: space-between;
