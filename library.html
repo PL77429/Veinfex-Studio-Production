@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veinfex_Studio</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="library">
+    <div class = "wrapper">
+        <header class = "container">
+            <span class = "logo">Veinfex Studio</span>
+            <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li class="active"><a href="contacts.html">Контакт</a></li>
+                <li class="btn"><a href="library.html">Библиотека</a></li>
+            </ul>
+            </nav>
+        </header>
+
+            <div class="container library">
+                <h1>Library</h1>
+                <p>Welcome to our library! Here you can find a collection of our films and projects. Feel free to explore and enjoy the content.</p>
+                <img src="img/library.png" alt="Library Image">
+            <h1>Contact us</h1>
+
+        <footer class="contacts">
+            <hr>
+            <div class = "blocks container">
+                <div>
+                    <span class = "logo">Veinfex Studio</span>
+                    <p>Сайт на котором собраны все мои фильмы которые я делал на празд
+                </div>
+
+                <div>
+                    <h4>About us</h4>
+                    <ul>
+                        <li>Movies</li>
+                        <li>Photos</li>
+                        <li>Library</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact us</h4>
+                    <p>vlad.star0408@gmail.com</p>
+                </div>
+            </div>
+
+            <hr>
+            <p>Все права защищены ©2026 Veinfex_Studio®</p>
+        </footer>
+    </div>
+
+    <script>
+        function checkEmail () {
+            let email = document.querySelector('#emailField') .value;
+            if (!email.includes ('@')) alert ('Нет символа @');
+            else if (!email.includes ('.')) alert ('Нет символа .');
+            else alert ('Почта была сохранена');
+        }
+    </script>
+
+</body>
+
+</html>
